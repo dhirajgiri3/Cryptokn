@@ -1,0 +1,115 @@
+.container-mx {
+
+    margin: 0 1.5rem;
+    margin-top: 13vh;
+    padding: 1rem;
+   
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container-mx {
+        
+        margin: 0 1rem;
+        margin-top: 22vh;
+    }
+}
+
+.cover {
+
+    color: rgb(0, 59, 52);
+    mix-blend-mode: multiply;
+}
+
+.trending_main {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    backface-visibility: visible;
+    transform: translateZ(0);
+    background: rgb(255, 255, 255);
+}
+
+.trending_card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.277);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(143, 143, 143, 0.19);
+    border-right: 1px solid rgba(143, 143, 143, 0.103);
+    border-left: 1px solid rgba(143, 143, 143, 0.103);
+    border-top: 1px solid rgba(218, 218, 218, 0.095);
+    -webkit-box-shadow: 10px 10px 35px -15px rgba(189, 189, 189, 1);
+    -moz-box-shadow: 10px 10px 35px -15px rgba(189, 189, 189, 1);
+    box-shadow: 10px 10px 35px -15px rgba(189, 189, 189, 1);
+    text-align: center;
+    width: 25rem;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.trending_card:hover {
+
+    -webkit-box-shadow: 10px 10px 35px -11px rgba(189, 189, 189, 1);
+    -moz-box-shadow: 10px 10px 35px -11px rgba(189, 189, 189, 1);
+    box-shadow: 10px 10px 35px -11px rgba(189, 189, 189, 1);
+    transform: scale(1.1);
+
+}
+
+.cover h1 {
+
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'gilroy';
+    margin-bottom: 1rem;
+}
+
+.cover h3 {
+
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'futura-light';
+    margin-bottom: 1rem;
+}
+.cover h5 {
+
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: 'futura-light';
+    margin-bottom: 1rem;
+}
+
+
+
+.trending_rank {
+
+    height: 3.3rem;
+    width: 3.3rem;
+    background: rgba(201, 187, 254, 0.252);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px rgba(0, 0, 0, 0.486) solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'futura';
+    margin-top: 1rem;
+}

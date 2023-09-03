@@ -1,0 +1,398 @@
+/* .header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.277);
+    margin: 1rem;
+    width: 100vw;
+    height: 5vh;
+    backdrop-filter: blur(10px);
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(143, 143, 143, 0.19);
+    border-right: 1px solid rgba(143, 143, 143, 0.103);
+    border-left: 1px solid rgba(143, 143, 143, 0.103);
+    border-top: 1px solid rgba(218, 218, 218, 0.095);
+
+} */
+
+.header {
+
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100vw - 2rem);
+    background: rgba(255, 255, 255, 0.256);
+    backdrop-filter: blur(7px);
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(218, 218, 218, 0.095);
+    transition: all 0.5s ease-in-out;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+
+}
+
+.header .menu {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.header .menu .logo {
+
+    font-family: 'vogue';
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+.header .menu ul {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .header .menu ul {
+
+        display: none;
+
+    }
+
+    .header .menu {
+
+        display: flex;
+
+    }
+
+}
+
+.header .menu ul a {
+
+    list-style: none;
+    font-family: 'gilroy';
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .9);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 100px;
+    overflow: hidden;
+
+}
+
+.header .menu ul a:hover li {
+
+    animation: linkhover 0.5s ease-in-out forwards;
+
+}
+
+@keyframes linkhover {
+
+    0% {
+
+        transform: translateY(-3rem);
+
+    }
+
+    50% {
+
+        letter-spacing: 7px;
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+        color: black;
+
+    }
+
+}
+
+
+.header .menu .search_btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    background: rgb(30, 30, 30);
+    border: 1px solid black;
+    color: #fff;
+    border-radius: 100px;
+    font-family: 'gilroy';
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px transparent solid;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+
+}
+
+.header .menu input {
+
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    outline: none;
+    font-family: 'futura';
+    padding: .5rem 2rem;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black dashed;
+
+}
+
+
+.header .menu input:focus {
+
+    background: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.899);
+    border-radius: 100px;
+    padding: .5rem 2rem;
+    border: 1px solid black;
+
+}
+
+.header .menu input::placeholder {
+
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'futura';
+    text-align: center;
+
+}
+
+.bars {
+
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .meu_top {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .bars {
+
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        top: .5rem;
+        right: 2.5rem;
+
+    }
+
+}
+
+
+/* *************** Sidebar ****************** */
+
+.sidebar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(160deg, rgb(123, 0, 255) 0%, rgba(111, 0, 255, 0.892) 100%);
+    backdrop-filter: blur(9px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-100%);
+    color: #fff;
+    overflow: auto;
+    overflow-x: hidden;
+    padding-bottom: 2rem;
+
+}
+
+.sidebar.active {
+
+    transform: translateX(0);
+
+}
+
+.sidebar_logo {
+
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.sidebar_logo a h1 {
+
+    font-family: 'vogue';
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.sidebar_bar {
+
+    font-size: 3rem;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+
+
+}
+
+
+.sidebar_links {
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sidebar_links ul {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    margin-top: 5rem;
+
+}
+
+.sidebar_links ul li {
+
+    list-style: none;
+    font-family: 'antique';
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.sidebar_links ul a li {
+
+    color: #fff;
+    font-family: 'antique';
+    background: rgb(35, 18, 53);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-size: 2rem;
+    padding: .3rem 2rem;
+    border-radius: 20%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.sidebar_links ul a li:hover {
+
+    border-radius: 100px;
+
+}
+
+.header_1 {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .menu {
+
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+    }
+
+    .header_1 {
+
+        width: 100%;
+        display: flex;
+    }
+
+    .header .menu input {
+
+
+        width: 50vw;
+
+    }
+
+    .sidebar_links ul a li {
+
+       
+        font-size: 1rem;
+       
+    
+    }
+
+
+}
+
+@media screen and (max-width: 468px) {
+
+    .header .menu input {
+
+        width: 70vw;
+
+    }
+
+}

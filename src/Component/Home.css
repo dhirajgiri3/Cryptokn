@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'Shrimp', sans-serif;
+    src: url('../asset/fonts/SHRIMP.ttf');
+}
+
+@font-face {
+    font-family: 'gilroy', sans-serif;
+    src: url('../asset/fonts/Gilroy-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'vogue', sans-serif;
+    src: url('../asset/fonts/Vogue.ttf');
+}
+
+@font-face {
+    font-family: 'austin', sans-serif;
+    src: url('../asset/fonts/Austin.ttf');
+}
+
+@font-face {
+    font-family: 'futura-light', sans-serif;
+    src: url('../asset/fonts/Futura-Light-font.ttf');
+}
+
+.home {
+
+    width: 100vw;
+    background-image: url(https://res.cloudinary.com/divbobkmd/image/upload/v1692957325/space-cryptokn_ydckgd.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.home_hero_bg {
+
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.166);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: azure;
+
+}
+
+.home_hero {
+
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+
+}
+
+
+
+.home_hero_right {
+
+    width: 50%;
+    margin: 2rem 0;
+    margin-top: 8rem;
+    padding: 1rem 0;
+
+}
+
+.home_hero_left {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 17rem;
+
+}
+
+.home_hero_left h1 {
+
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(240, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    font-family: 'Shrimp' !important;
+
+}
+
+.home_hero_left p {
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: azure;
+    margin-bottom: 1rem;
+    font-family: 'gilroy' !important;
+
+}
+
+.home_hero_left button {
+
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: rgb(24, 0, 51);
+    font-family: 'shrimp';
+    background-color: rgb(255, 255, 255, .9);
+    backdrop-filter: blur(10px);
+    border: 1px solid transparent;
+    padding: 0.5rem 2rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: .7rem;
+    letter-spacing: 1px;
+
+}
+
+.home_hero_left button:hover {
+
+    background-color: rgb(99, 0, 212);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+
+}
+
+.home_hero_right img {
+
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    margin: 0 3rem;
+    margin-bottom: 2rem;
+    animation: imgAnimation 3s ease-in-out infinite;
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .home_hero {
+
+        flex-direction: column;
+
+    }
+
+    .home_hero_right {
+
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .home_hero_left {
+
+        width: 100%;
+        margin-top: 10rem;
+        margin-bottom: 0;
+
+    }
+
+    .home_hero_left h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+    .home_hero_left p {
+
+        font-size: 1.2rem;
+
+    }
+
+    .home_hero_left button {
+
+        font-size: 0.9rem;
+
+    }
+}
+
+.home_2 {
+
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home_2_left {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.home_2_left img {
+
+    width: calc(100% - 6rem);
+    height: 100%;
+    object-fit: cover;
+    margin: 0 3rem;
+    animation: imgAnimation 3s ease-in-out infinite;
+}
+
+
+.home_2_right {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.home_2_right h1 {
+
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    font-family: 'gilroy' !important;
+
+}
+
+@keyframes imgAnimation {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-3rem);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .home_2 {
+
+        flex-direction: column;
+
+    }
+
+    .home_2_left {
+
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .home_2_right {
+
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .home_2_right h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+}
+
+.home_3 {
+
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.home_3 img {
+
+    width: calc(80% - 6rem);
+    height: 100%;
+    object-fit: cover;
+    margin: 4rem 3rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .home_3 {
+
+        flex-direction: column;
+
+    }
+
+    .home_3 img {
+
+        width: calc(100% - 3rem);
+        height: 100%;
+        object-fit: cover;
+        margin: 4rem 1.5rem;
+
+    }
+
+}
+
+
+
+.home_4 {
+
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.home_4_left {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+.home_4_left img {
+
+    width: calc(100% - 8rem);
+    height: 100%;
+    object-fit: cover;
+    margin: 0 4rem;
+    animation: imgAnimation 3s ease-in-out infinite;
+
+
+}
+
+.home_4_right {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5rem;
+
+}
+
+.home_4_right h1 {
+
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    font-family: 'Shrimp' !important;
+
+}
+
+.home_4_right p {
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(240, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-family: 'gilroy' !important;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .home_4 {
+
+        flex-direction: column;
+
+    }
+
+    .home_4_left {
+
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .home_4_right {
+
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .home_4_right h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+
+    .home_4_left img {
+
+        width: calc(100% - 3rem);
+        height: 100%;
+        object-fit: cover;
+        margin: 0 1.5rem;
+        animation: imgAnimation 3s ease-in-out infinite;
+
+
+    }
+}

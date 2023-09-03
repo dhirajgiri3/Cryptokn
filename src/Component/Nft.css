@@ -1,0 +1,181 @@
+.nft_main {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    background: rgb(255, 255, 255);
+
+
+}
+
+.nft_card {
+
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #000d4c, #32000ace, #000d4c, #32000ace);
+    backdrop-filter: blur(10px);
+    background-size: 400% 400%;
+    border-radius: 10px;
+    margin: 2rem;
+    transition: all 0.3s ease-in-out;
+    height: 300px;
+    width: 33vw;
+    -webkit-box-shadow: 10px 10px 35px 15px rgba(189, 189, 189, 1);
+    -moz-box-shadow: 10px 10px 35px -15px rgba(189, 189, 189, 1);
+    box-shadow: 10px 10px 35px 5px rgba(189, 189, 189, 1);
+    white-space: pre-wrap;
+
+}
+
+
+
+
+.nft_card:hover {
+
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    animation: gradient 10s ease infinite alternate;
+    -webkit-animation: gradient 15s ease infinite;
+    -moz-animation: gradient 10s ease infinite;
+    -o-animation: gradient 10s ease infinite;
+    -ms-animation: gradient 10s ease infinite;
+    -webkit-box-shadow: 10px 10px 35px 15px rgba(52, 52, 52, 0.438);
+    -moz-box-shadow: 10px 10px 35px -15px rgba(34, 34, 34, 0.552);
+    box-shadow: 10px 10px 35px -5px rgba(37, 37, 37, 0.573);
+
+}
+
+
+@media screen and ( max-width : 768px) {
+    
+
+    .nft_card {
+
+        height: 100%;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        padding: 20px;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-transform: uppercase;
+        background: linear-gradient(to right, #000d4c, #32000ace, #000d4c, #32000ace);
+        backdrop-filter: blur(10px);
+        background-size: 400% 400%;
+        border-radius: 10px;
+        margin: 2rem;
+        transition: all 0.3s ease-in-out;
+        height: 300px;
+        width: 33vw;
+        -webkit-box-shadow: 10px 10px 35px 15px rgba(189, 189, 189, 1);
+        -moz-box-shadow: 10px 10px 35px -15px rgba(189, 189, 189, 1);
+        box-shadow: 10px 10px 35px 5px rgba(189, 189, 189, 1);
+        white-space: pre-wrap;
+        animation: gradient 10s ease infinite alternate;
+    
+    }
+    
+    
+    
+    
+    .nft_card:hover {
+    
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.1);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -o-border-radius: 10px;
+        -ms-border-radius: 10px;
+        border-radius: 10px;
+        
+    
+    }
+
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .nft_card {
+        margin: 1rem;
+        width: 90vw;
+    }
+
+
+}
+
+.nft_card h1 {
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: 'Shrimp' !important;
+
+}
+
+.nft_card h3 {
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: 'Shrimp' !important;
+    white-space: pre-wrap;
+    width: 90%;
+
+}

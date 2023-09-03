@@ -1,0 +1,97 @@
+ <li>
+                    <h3>{coin.name}</h3>
+                    <h6>{coin.symbol}</h6>
+                    <p> Value In USD : {coin.market_data.current_price.usd}$</p>
+                    <p>Market Cap : {coin.market_data.market_cap.usd}$</p>
+                    <p>
+                      circulating supply: {coin.market_data.circulating_supply}
+                    </p>
+                    <p>Market Cap Rank : {coin.market_data.market_cap_rank}</p>
+                    <p>
+                      Market Cap Change 24h :{" "}
+                      {coin.market_data.market_cap_change_24h}
+                    </p>
+                    <p>
+                      Market Cap Change Percentage 24h :{" "}
+                      {coin.market_data.market_cap_change_percentage_24h}
+                    </p>
+                    <p>Total Volume : {coin.market_data.total_volume.usd}$</p>
+                    <p>High 24h : {coin.market_data.high_24h.usd}$</p>
+                    <p>Low 24h : {coin.market_data.low_24h.usd}$</p>
+                    <p>
+                      Price Change Percentage 24h :{" "}
+                      {coin.market_data.price_change_percentage_24h}%
+                    </p>
+                    <p>
+                      Price Change Percentage 7d :{" "}
+                      {coin.market_data.price_change_percentage_7d}%
+                    </p>
+                    <p>
+                      Price Change Percentage 14d :{" "}
+                      {coin.market_data.price_change_percentage_14d}%
+                    </p>
+                    <p>
+                      Price Change Percentage 30d :{" "}
+                      {coin.market_data.price_change_percentage_30d}%
+                    </p>
+                  </li>
+
+                  options={{
+          smooth: true,
+          lerp: 0.075,
+          multiplier: 1,
+          class: "is-reveal",
+          repeat: true,
+          tablet: {
+            smooth: true,
+            lerp: 0.075,
+            multiplier: 1,
+            class: "is-reveal",
+            repeat: true,
+          },
+          smartphone: {
+            smooth: true,
+            lerp: 0.075,
+            multiplier: 1,
+            class: "is-reveal",
+            repeat: true,
+          },
+        }}
+        watch={[]}
+        containerRef={containerref}
+
+
+            const [chartData, setChartData] = useState({});
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
+
+  useEffect(() => {
+    const fetchChart = async () => {
+        try {
+            const { data } = await axios.get(`${server}/coins/${name}/history?days=${days}`);
+            setChartData(data);
+            setLoading(false);
+            console.log(data);
+        } catch (error) {
+            setError(true);
+            setLoading(false);
+        }
+    };
+
+    fetchChart();
+
+    const price = [1, 2, 3, 5];
+  const date = ["1/2/3", "2/4/6", "3/2/55", "5/2/12"];
+
+  const data = {
+    labels: date,
+    datasets: [
+      {
+        label: `Price in ${Currency}}`,
+        data: price,
+        fill: false,
+        backgroundColor: "rgb(255, 99, 132)",
+        borderColor: "rgba(255, 99, 132, 0.2)",
+      },
+    ],
+  };

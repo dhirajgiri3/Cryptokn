@@ -1,0 +1,155 @@
+.news_card_body {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .news_card_body {
+        flex-direction: column;
+    }
+}
+
+.news_img {
+
+    width: 45vw;
+    height: 80vh;
+    border-radius: 30px;
+
+}
+
+.news_info {
+
+    width: 45vw;
+    height: 100%;
+    border-radius: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+    
+
+.news_img img {
+
+    width: 100%;
+    height:  100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.news_title {
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+    font-family: 'gilroy';
+}
+
+.news_description {
+
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 1rem;
+    font-family: 'futura-light';
+}
+
+.news_readbtn button {
+
+    padding: 0.5rem 100px;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'gilroy';
+    border: transparent 1px solid;
+   
+}
+
+.news_readbtn button:hover {
+
+    background-color: #fff;
+    color: #000;
+    border: 1px dashed #000;
+    transition: all 0.1s ease-in-out;
+}
+
+.news_readbtn button:active {
+
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.news_readbtn button:focus {
+
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.news_readbtn button:visited {
+
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.news_readbtn button:link {
+
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+   
+    .news_img {
+
+        width: 95vw;
+        height: 100%;
+        border-radius: 30px;
+    
+    }
+    
+    .news_info {
+    
+        width: 95vw;
+        height: 100%;
+        border-radius: 30px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+}
+    
+
+.news_author {
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(120, 120, 120);
+    margin-bottom: 1rem;
+    font-family: 'futura-light';
+
+}
+
+

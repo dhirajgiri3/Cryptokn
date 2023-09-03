@@ -1,0 +1,108 @@
+/*======================
+    404 page
+=======================*/
+
+
+.error {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    padding: 2rem;
+}
+
+.page_404 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.err_top {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.err_top h1 {
+
+    font-size: 10rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-family: "gilroy";
+    text-rendering: optimizeLegibility;
+
+}
+
+.err_top h2 {
+
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    margin: 1rem auto;
+    margin-top: 0;
+    font-family: "gilroy";
+
+}
+
+.err_bottom {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.err_bottom p {
+
+    font-size: 1rem;
+    font-weight: 900;
+    color: rgba(43, 43, 43, 0.767);
+    text-transform: uppercase;
+    margin: 1rem auto;
+    margin-top: 0;
+    font-family: "Roboto";
+
+}
+
+.four_zero_four_bg {
+
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 180px;
+    width: 30vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    margin: 2rem auto;
+
+}
+
+.goback {
+
+    padding: .5rem 2rem;
+    background: #000;
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "gilroy";
+    border-radius: 100px;
+    margin-top: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.goback:hover {
+
+    background: rgba(0, 0, 0, 0.852);
+    transition-delay: 0.1s;
+}

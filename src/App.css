@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000d9;
+  height: 19vh;
+  border-radius: 500px;
+  width: 0.3rem;
+  padding: 0 0.5rem;
+}
+
+@font-face {
+  font-family: 'gilroy', sans-serif;
+  src: url('../src/asset/fonts/Gilroy-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'vogue', sans-serif;
+  src: url('../src/asset/fonts/Vogue.ttf');
+}
+
+@font-face {
+  font-family: 'austin', sans-serif;
+  src: url('../src/asset/fonts/Austin.ttf');
+}
+
+@font-face {
+  font-family: 'futura-light', sans-serif;
+  src: url('../src/asset/fonts/Futura-Light-font.ttf');
+}
+
+@font-face {
+  font-family: 'futura', sans-serif;
+  src: url('../src/asset/fonts/futura\ medium\ bt.ttf');
+}
+
+@font-face {
+  font-family: 'futura-bold', sans-serif;
+  src: url('../src/asset/fonts/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+  font-family: 'futura-heavy', sans-serif;
+  src: url('../src/asset/fonts/Futura\ Heavy\ font.ttf');
+}
+
+@font-face {
+  font-family: 'modern-austin', sans-serif;
+  src: url('../src/asset/fonts/AustinModern.ttf');
+}
+
+@font-face {
+  font-family: 'antique-bold', sans-serif;
+  src: url('../src/asset/fonts/AntiqueOliveBold.ttf');
+}
+
+@font-face {
+  font-family: 'olv5', sansolv5-serif;
+  src: url('../src/asset/fonts/OLVR55W.TTF');
+}
+
+@font-face {
+  font-family: 'shrimp', sans-serif;
+  src: url('../src/asset/fonts/SHRIMP.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+.app {
+
+  overflow: hidden;
+}
+
+img {
+
+  image-rendering: optimizeQuality;
+  image-resolution: from-image;
+  image-orientation: from-image;
+}
